@@ -26,10 +26,10 @@ export const UserStorage = ({ children }) => {
 	async function getUser(token) {
 		const { url, options } = USER_GET(token);
 		const response = await fetch(url, options);
-		console.log(response);
+		// console.log(response);
 
 		const json = await response.json();
-		console.log(json);
+		// console.log(json);
 		setData(json);
 		setLogin(true);
 	}
