@@ -7,7 +7,7 @@ import { UserContext } from "../../UserContext";
 import Error from "../Helper/Error";
 import styles from "./LoginForm.module.css";
 import stylesBtn from "../Forms/Button.module.css";
-
+import Head from "../Helper/Head";
 
 // import { TOKEN_POST, USER_GET } from "../../api";
 
@@ -50,6 +50,8 @@ const LoginForm = () => {
 
 	return (
 		<section className="animeLeft">
+			<Head title="Login" />
+
 			<h1 className="title">Login</h1>
 			<form className={styles.form} onSubmit={handleSubmit}>
 				<Input
