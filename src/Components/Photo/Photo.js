@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { PHOTO_GET } from "../../api";
+import { PHOTO2_GET } from "../../api";
 import useFetch from "../../Hooks/useFetch";
 import Error from "../Helper/Error";
 import Loading from "../Helper/Loading";
@@ -11,7 +11,7 @@ const Photo = () => {
 	const { data, loading, error, request } = useFetch();
 
 	React.useEffect(() => {
-		const { url, options } = PHOTO_GET(id);
+		const { url, options } = PHOTO2_GET(id);
 		request(url, options);
 	}, [request, id]);
 
